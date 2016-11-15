@@ -24,7 +24,7 @@ BuildMap <- function(data, map.var) {
   p <- plot_geo(data, locationmode = 'USA-states') %>%
     add_trace(
       z = eval(parse(text = var.equation)), text = ~state, locations = ~code,
-      color = eval(parse(text = var.equation)), colors = 'Purples'
+      color = eval(parse(text = var.equation)), colors = 'Paired'
     ) %>%
     colorbar(title = "Color Title") %>%
     layout(
